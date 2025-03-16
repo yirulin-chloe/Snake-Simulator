@@ -1,0 +1,88 @@
+{
+
+    "name": "Snake game! Use a, d, w, s to move the snake. Game over if snake head hits its body OR snake hit the boundary",
+    "ip": "0.0.0.0",
+    "port": 8765,
+
+    "buttons": [],
+
+    "agents": [    
+        {
+            "definition": "defs/random_blocks.json",
+            "style": { "fill": "orange", "stroke": "black" },
+            "position": {
+              "x": 100,
+              "y": 0,
+              "theta": 0
+            }
+          },
+          {
+            "definition": "defs/snake_head.json",
+            "style": { "fill": "green", "stroke": "black" },
+            "position": {
+              "x": -50,
+              "y": 0,
+              "theta": 0
+            }
+          },
+          {
+            "definition": "defs/snake_body.json",
+            "style": { "fill": "blue", "stroke": "black" },
+            "position": {
+              "x": -80,
+              "y": 0,
+              "theta": 0
+            }
+          },
+          {
+            "definition": "defs/score.json",
+            "style": { "fill": "lightyellow", "stroke": "black" },
+            "position": {
+              "x": -10,
+              "y": -230,
+              "theta": 0
+            }
+          }
+    ],
+
+    "statics": [
+      {
+        "style": { "fill": "gray", "stroke": "none" },
+        "shape": [
+            { "x": -350, "y": -200 },
+            { "x": -350,  "y": 200 },
+            { "x": -340,  "y": 200 },
+            { "x": -340, "y": -200 }
+        ]
+    },
+    {
+        "style": { "fill": "gray", "stroke": "none" },
+        "shape": [
+            { "x": 350, "y": -200 },
+            { "x": 350,  "y": 200 },
+            { "x": 340,  "y": 200 },
+            { "x": 340, "y": -200 }
+        ]
+    },
+    {
+        "style": { "fill": "gray", "stroke": "none" },
+        "shape": [
+            { "x": -350, "y": 200 },
+            { "x": 350,  "y": 200 },
+            { "x": 350,  "y": 190 },
+            { "x": -350, "y": 190 }
+        ]
+    },
+    {
+        "style": { "fill": "gray", "stroke": "none" },
+        "shape": [
+            { "x": -350, "y": -200 },
+            { "x": 350,  "y": -200 },
+            { "x": 350,  "y": -190 },
+            { "x": -350, "y": -190 }
+        ]
+    }
+
+    ]
+
+}
