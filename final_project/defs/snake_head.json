@@ -1,0 +1,19 @@
+{
+    "name": "snake_head",
+    "type": "dynamic",
+    "description": "Snake head",
+    "shape": [
+        { "x": -10, "y": 10 },
+        { "x": 10, "y": 10 },
+        { "x": 10, "y": -10 },
+        { "x": -10, "y": -10 }
+    ],
+    "friction": {
+      "collision": 0,
+      "linear": 40,
+      "rotational": 600
+    },
+    "sensors": [],
+    "mass": 1,    
+    "controller": "lib/snake_head.so"
+}
